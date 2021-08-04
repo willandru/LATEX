@@ -1,0 +1,207 @@
+
+\documentclass[journal,transmag]{IEEEtran}
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+   \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation
+% can be obtained at: 
+% http://www.ctan.org/pkg/graphicx
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found at:
+% http://www.ctan.org/pkg/epslatex
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). The IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+
+
+
+\begin{document}
+
+\title{\textsc{ELASTICIDAD DE UN RESORTE}}
+
+\author{
+\IEEEauthorblockN{William A. Gómez,Carlos J. Tabares,Juan M. Leon,
+Julian D. Colmenares, andLuis A. Cañon,}
+\IEEEauthorblockA{Pontificia Universidad Javeriana, Bogotá, Colombia}
+\IEEEauthorblockA{Laboratorio de Fluidos y Termodinámica}
+\IEEEauthorblockA{Grupo IV}
+\thanks{PUJ}
+}
+% The paper headers
+\markboth{Elasticidad. Agosto 4~2021}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Transactions on Magnetics Journals}
+\IEEEtitleabstractindextext{%
+
+	\begin{abstract}
+	Con la intension de estudiar y analizar el comportamiento de los diferentes materiales de la naturaleza, hemos realizado unos experimetos de esfuerzo-deformación sobre un caucho o banda elastica comun, con el fin de contrastar el comportamiento de los materiales rigidos y solidos con los materiales elasticos por medio de la ecuacion de la Ley de Hook y los diagramas de esfuerzo-deformacion. En este laboratorio se tomaron varias muestras iguales de bandas elasticas con dimensiones 14mm x 2mm x 2mm y se sometieron a a los mismos experimentos, esto con el fin de determinar el modulo de Young, el límite de elasticidad, así como los respectivos calculos de la desviación estandar, incertidumbre experimental y error relativo de los datos medidos experimentalmente.
+	\end{abstract}
+	
+	\begin{IEEEkeywords}
+	Elasticidad, Esfuerzo, Deformación, Banda elástica, Caucho, Ley de Hook, Módulo de Young, Límite elasticidad.
+	\end{IEEEkeywords}}
+
+\maketitle
+\IEEEdisplaynontitleabstractindextext
+\IEEEpeerreviewmaketitle
+
+
+\section{Introduction}
+	\IEEEPARstart{T}{his} demo file is intended to serve as a 		``starter file''
+	for IEEE \textsc{Transactions on Magnetics} journal papers 	produced under \LaTeX\ using
+	IEEEtran.cls version 1.8b and later.
+
+	I wish you the best of success.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%METODOLOGIA
+\section{Metodología}
+
+\subsection{Límite de elasticidad}
+Para la primera parte del laboratorio queríamos estimar el límite de deformación de un caucho, es decir queríamos averigar el esfuerzo máximo al cual pueda estirarse sin deformarse.
+ Para esto , utilizamos un caucho o banda elastica común, como el de la Figura \ref{fig1}, y con la ayuda de un papel milimetrado cortamos 2 cauchos de 14 milimetros de longitud y aproximadamente 1.8 milimetros de sección transversal. 
+
+\begin{figure}[!h]
+\center
+\includegraphics[width=3cm]{caucho.jpeg}
+\includegraphics[width=3cm]{medida.jpeg}
+\caption{Banda elástica común de 1.5mm de groso aproximadamente.}
+\label{fig1}
+\end{figure}
+
+Hallamos el límite de elasticidad para estos 2 cauchos agregando grupos de monedas a vasos plasticos  de montajes como el de la Figura \ref{fig2} y midiendo su deformación con la ayuda de un papel milimétrico. El montaje se realizo atando una cuerda a un vaso de plastico y amarrando la cuerda al extremo del caucho con la ayuda de un hilo de tension. El montaje se colgo del mango de una puerta y se acomodo por detras del caucho una regla de papel milimetrado para que el extremo inicial del caucho se encontrara al nivel 0 del papel milimetrado (0 mm) y se pudieran hacer las distintas pruebas y mediciones varias veces.
+\begin{figure}[!h]
+\center
+\includegraphics[width=5cm]{montaje.jpeg}
+\caption{Límite del comportamiento elástico. Se graficó el cambio de la longitud del caucho en función de la masa soportada (distinta cantidad de monedas).}
+\label{fig2}
+\end{figure}
+
+Para la prueba se utilizaron monedas de 1 "penique" Británico, que tienen una masa de exacta de 3.465 gramos, como se observa en la Figura \ref{fig3}.
+
+\begin{figure}[!h]
+\center
+\includegraphics[width=3cm]{penny.png}
+\caption{Moneda de "1 penique" del Reino Unido. Pesa exactamente 3.564 ± 0.000005 gramos.}
+\label{fig3}
+\end{figure}
+
+Para calcular el límite de elasticidad, se agregaron monedas de a grupos de 4, para que se pudiera evidenciar el cambio en la longitud del caucho (delta l) y se registro esta deformación hasta que fue posible llevar a cabo el experimento.
+
+
+\subsection{Esfuerzó-Deformación}
+Se dividió el caucho de 14mm en 3 secciones iguales y se hizo seguimiento a la deformación ocurrida en cada segmento, al aplicarle una deformación de tension en el eje de la fuerza de la gravedad (debido al peso de las monedas). Se tomaron 2 cauchos iguales y se dividieron en 3 secciones equidistantes, se agregaron grupos de 4 monedas hasta completar un total de 20 monedas en el vaso y se registro en cada paso el desplazamiento de las marcas con la ayuda del papel milimetrado. 
+
+Los experimentos se repitieron 3 veces en cada caucho, estos datos se alamcenaron en matrices y se calcularon los correspondientes valores del desplazamiento de las marcas (delta l), calculando el promedio de los tres experimentos con su desviacion estandar, error absoluto y relativo, para cada uno de los 2 cauchos.
+
+
+
+\subsection{Análisis de datos}
+
+Con los datos recolectados en las anteriores 2 etapas nos dispusimos a modelar los datos utilizando las ecuaciones de esfuerzo y deformación obtenidas por la Ley de Hook con el fin principal de determinar el módulo de Young del caucho.
+
+Todos los datos se recolectaron durante el experimento utilizando una hoja de cálculo de Excel. Despues se pasaron los datos a Matlab y se organizaron en matrices correspondientes, esto con el fin de realizar los calculos de laboratorio de una manera más controlada, además se utilizó  este software para graficar los resultados.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%RESULTADOS
+\section{Resultados}
+\subsection{Límite de elasticidad}
+\begin{figure}[!h]
+\center
+\includegraphics[width=10cm]{lomas.jpg}
+\caption{Simulation results for the network.}
+\label{figr}
+\end{figure}
+
+
+
+\subsection{Esfuerzó-Deformación}
+\begin{figure}[!h]
+\center
+\includegraphics[width=10cm]{esde1.jpg}
+\caption{Simulation results for the network.}
+\label{figs}
+\end{figure}
+\begin{figure}[!h]
+\center
+\includegraphics[width=10cm]{esde2.jpg}
+\caption{Simulation results for the network.}
+\label{figs}
+\end{figure}
+\subsection{Análisis de datos}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%RESULTADOS
+
+\section{Análisis}
+
+\section{Discusión}
+
+
+\section{Conclusion}
+	The conclusion goes here.
+
+
+\appendices
+\section{Proof of the First Zonklar Equation}
+	Appendix one text goes here.
+
+\section{}
+	Appendix two text goes here.
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+
+\begin{thebibliography}{1}
+
+	\bibitem{IEEEhowto:kopka}
+	H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+	  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+\end{thebibliography}
+
+
+\end{document}
+
+
